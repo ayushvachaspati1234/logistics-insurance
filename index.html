@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="API-native, per-shipment cargo insurance with IoT-verified condition data and instant parametric payouts — embedded in freight platforms and checkouts.">
+  <title>SureRoute — Cargo Insurance That Pays Before You File</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#2b3a42"/>
+          <path d="M7 21c4-9 14-9 18-1" fill="none" stroke="#e76f51" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2.5 4"/>
+          <circle cx="7" cy="21" r="2.6" fill="#fff"/>
+          <circle cx="25" cy="20" r="2.6" fill="#e76f51"/>
+        </svg>
+        <span data-company>SureRoute</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#features">Product</a>
+        <a href="#how">How it works</a>
+        <a href="#claims">Claims proof</a>
+      </nav>
+      <a href="#cta" class="btn btn-primary btn-sm">Get API keys</a>
+    </div>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">Programmable logistics insurance</p>
+        <h1>The sensor saw the damage. Why does the claim take 60 days?</h1>
+        <p class="lead"><span data-company>SureRoute</span> writes per-shipment cargo coverage through an API, verifies conditions with the IoT data already on the freight, and pays parametric claims in minutes — not months of PDFs and adjusters.</p>
+        <div class="hero-actions">
+          <a href="#cta" class="btn btn-primary">Get API keys</a>
+          <a href="#how" class="btn btn-ghost">Embed in your platform</a>
+        </div>
+        <p class="hero-note">For freight platforms, 3PLs &amp; e-commerce checkouts · backed by A-rated reinsurance</p>
+      </div>
+
+      <!-- Hero visual: shipment sensor timeline → instant payout -->
+      <div class="hero-visual" aria-hidden="true">
+        <div class="ship-card">
+          <div class="ship-head">
+            <div>
+              <b>Shipment #SR-88412</b>
+              <span>Reefer · vaccines · Chicago → Denver</span>
+            </div>
+            <span class="policy-chip">Covered · $48,000</span>
+          </div>
+          <div class="ship-timeline">
+            <div class="tl-item">
+              <span class="tl-dot ok"></span>
+              <div class="tl-body">
+                <b>Departed Chicago</b>
+                <span>Mon 06:14 · temp 3.1°C · within range</span>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-dot ok"></span>
+              <div class="tl-body">
+                <b>I-80 W checkpoint</b>
+                <span>Mon 11:42 · temp 3.4°C · shock 0.4g · nominal</span>
+              </div>
+            </div>
+            <div class="tl-item alert">
+              <span class="tl-dot bad"></span>
+              <div class="tl-body">
+                <b>Temperature excursion</b>
+                <span>Mon 15:07 · 9.8°C for 94 min · reefer unit fault</span>
+              </div>
+            </div>
+            <div class="tl-item payout">
+              <span class="tl-dot pay"></span>
+              <div class="tl-body">
+                <b>Parametric payout triggered</b>
+                <span>Mon 16:41 · <em>$48,000 paid</em> · no claim filed, no adjuster</span>
+              </div>
+            </div>
+          </div>
+          <div class="ship-foot">Sensor data hash anchored at binding · payout rule: &gt;8°C for &gt;60 min</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROBLEM ============ -->
+  <section class="section">
+    <div class="container">
+      <h2>Cargo insurance is the slowest thing on the truck.</h2>
+      <p class="section-lead">Freight booking is an API call. The insurance on it is a PDF, a broker, and a 60-day argument.</p>
+      <div class="cards cards-3">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6M9 13h6M9 17h4"/></svg>
+          </div>
+          <h3>Annual policies, per-load risk</h3>
+          <p>Blanket annual policies overcharge easy lanes and under-cover hard ones. A reefer of vaccines and a flatbed of lumber pay like they're the same risk.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+          </div>
+          <h3>60-day claims</h3>
+          <p>Photos, forms, adjusters, depreciation tables. Meanwhile the shipper has re-made the product, re-shipped it, and eaten the cash-flow hole.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a8 8 0 0 1 16 0" opacity="0.5"/><path d="M12 14l4.5-4.5"/><path d="M2 20h20"/></svg>
+          </div>
+          <h3>Evidence everyone ignores</h3>
+          <p>The trailer logged temperature, shock, and GPS the entire trip — and the claims process still asks for a paper bill of lading and a guess.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FEATURES ============ -->
+  <section class="section section-tint" id="features">
+    <div class="container">
+      <h2>Insurance that behaves like infrastructure.</h2>
+      <p class="section-lead">Quote, bind, monitor, and pay — all in the same API your platform already speaks.</p>
+      <div class="cards cards-4">
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13 5l-2 14"/></svg>
+          </div>
+          <h3>Per-shipment API coverage</h3>
+          <p>One POST request returns a bindable quote priced on lane, mode, season, and cargo class. Coverage attaches at pickup, expires at delivery.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13a7 7 0 0 1 14 0" opacity="0.55"/><path d="M2.5 10a11 11 0 0 1 19 0" opacity="0.35"/><circle cx="12" cy="16" r="2.2"/><path d="M12 18.2V21"/></svg>
+          </div>
+          <h3>IoT-verified conditions</h3>
+          <p>We ingest the telematics already on the load — temp, shock, humidity, GPS — and hash it at binding so the evidence can't be disputed later.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 5 13h6l-1 8 8-10h-6z"/></svg>
+          </div>
+          <h3>Instant parametric payouts</h3>
+          <p>Define the trigger — temperature excursion, shock threshold, days-late — and payment fires automatically when sensors confirm it. Median payout: 94 minutes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 10h18M7 15h4"/></svg>
+          </div>
+          <h3>Embedded at checkout</h3>
+          <p>White-label widgets for freight platforms and e-commerce carts. Your customers add coverage in one click; you take a margin on every policy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW IT WORKS ============ -->
+  <section class="section" id="how">
+    <div class="container">
+      <h2>Three calls. Quote, bind, forget.</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h3>POST /quotes</h3>
+          <p>Send lane, mode, cargo class, and value. Get a priced, bindable quote in under 300 ms — with the parametric triggers spelled out in plain JSON.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h3>POST /bind + sensors</h3>
+          <p>Bind at pickup and register the load's telematics feed. We hash the baseline so both sides trust the data when it matters.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h3>Payouts fire themselves</h3>
+          <p>If a trigger condition is met, funds move automatically and a webhook tells your platform. No trigger, no paperwork — the policy just expires.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLAIMS PROOF ============ -->
+  <section class="section section-tint" id="claims">
+    <div class="container">
+      <h2>Claims numbers underwriters thought were typos.</h2>
+      <div class="stats">
+        <div class="stat">
+          <div class="stat-num">94 min</div>
+          <p>median time from trigger event to money moved</p>
+        </div>
+        <div class="stat">
+          <div class="stat-num">0 forms</div>
+          <p>required for parametric claims — sensor data is the claim</p>
+        </div>
+        <div class="stat">
+          <div class="stat-num">−28%</div>
+          <p>average premium vs. blanket annual policies on the same volume</p>
+        </div>
+      </div>
+
+      <div class="quote-card">
+        <blockquote>
+          <p>&ldquo;A reefer failure used to mean six weeks of photos, forms, and fighting about whether the temperature log was &lsquo;certified.&rsquo; With <span data-company>SureRoute</span> the payout hit our account before the truck reached Denver. Our pharma customers now book with us specifically because of it.&rdquo;</p>
+          <footer>
+            <div class="avatar">DV</div>
+            <div>
+              <strong>Dana Whitfield</strong>
+              <span>CEO, Crossline Cold Chain Logistics</span>
+            </div>
+          </footer>
+        </blockquote>
+      </div>
+
+      <div class="trust-row">
+        <span class="trust-badge">A-rated reinsurance capacity</span>
+        <span class="trust-badge">Licensed in 48 states</span>
+        <span class="trust-badge">SOC 2 Type II</span>
+        <span class="trust-badge">Webhook-native claims</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-cta" id="cta">
+    <div class="container cta-inner">
+      <h2>Put coverage in your booking flow.</h2>
+      <p>Sandbox keys and the embed widget are free to try. Most platforms quote their first live shipment within a week.</p>
+      <form class="cta-form" id="signup-form">
+        <input type="email" placeholder="you@yourplatform.com" required aria-label="Email address">
+        <button type="submit" class="btn btn-light">Get API keys</button>
+      </form>
+      <p class="cta-confirm" id="signup-confirm" hidden>Keys requested — our partnerships team will reply within one business day.</p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <svg class="logo-mark" width="28" height="28" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="#e76f51"/>
+            <path d="M7 21c4-9 14-9 18-1" fill="none" stroke="#2b3a42" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="2.5 4"/>
+            <circle cx="7" cy="21" r="2.6" fill="#fff"/>
+            <circle cx="25" cy="20" r="2.6" fill="#2b3a42"/>
+          </svg>
+          <span data-company>SureRoute</span>
+        </a>
+        <p>API-native, sensor-verified cargo insurance.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#claims">Claims proof</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="mailto:hello@sureroute.example.com" data-email>hello@sureroute.example.com</a>
+        <span data-domain>sureroute.example.com</span>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 <span data-company>SureRoute</span>. All rights reserved. Insurance products underwritten by licensed carrier partners; availability varies by state.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("signup-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+      this.hidden = true;
+      document.getElementById("signup-confirm").hidden = false;
+    });
+  </script>
+</body>
+</html>
