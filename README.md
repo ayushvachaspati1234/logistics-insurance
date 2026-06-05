@@ -1,4 +1,4 @@
-# SureRoute — Landing Page
+# Solvi — Landing Page
 
 Static landing page for a **programmable logistics insurance** startup (API-native per-shipment cargo coverage, IoT-verified condition data, instant parametric payouts). No build step, no dependencies — plain HTML/CSS/JS.
 
@@ -8,9 +8,9 @@ Edit the three values at the top of **`config.js`**:
 
 ```js
 const BRAND = {
-  companyName: "SureRoute",
-  domain: "sureroute.example.com",
-  contactEmail: "hello@sureroute.example.com"
+  companyName: "Solvi",
+  domain: "solvionline.xyz",
+  contactEmail: "hello@solvionline.xyz"
 };
 ```
 
